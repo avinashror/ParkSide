@@ -1,0 +1,20 @@
+After downloading the project from the git please follow the given steps inorder to run the project on your local machine
+
+1) Open terminal and go to the local directory of the application and run bundle install
+2) Then run rake db:create
+3) Then run rake db:migrate
+4) For SSL Self certification I have used thin server. Inorder to start the server with the local certification run the following command
+
+bundle exec thin start -p 3001 --ssl  --ssl-key-file .ssl/localhost.key --ssl-cert-file .ssl/localhost.crt
+
+5) Now open the web browser and goto https://localhost:3001 to view your web application.
+   Since we are viewing in self certified SSL(That means we are not authorized by any trusted agency or department), we will 
+   receive a warning saying that SITE SECURITY CERTIFICATE IS NOT VERIFIED.
+   In the bottom of the web page you can see advanced(since am using chrome I can see in the bottom of the page. It may differ from browser to browser).
+   Click on the advanced tab and click Proceed anyway to visit the site.
+
+
+NOTE: VALIDATIONS FOR THE UI IS NOT GIVEN. YOU CAN CHECK THE FUNCTIONALITY OF THE APPLICATION.
+
+
+FEEL FREE TO CONTACT ME IF YOU HAVE ANY ISSUES IN THE CONFIGURATION.

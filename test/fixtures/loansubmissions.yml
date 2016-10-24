@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  loanamount: 1
+  propertyvalue: 1
+  ssn: MyString
+  loanstatus: MyString
+
+two:
+  loanamount: 1
+  propertyvalue: 1
+  ssn: MyString
+  loanstatus: MyString

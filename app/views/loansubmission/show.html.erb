@@ -1,0 +1,16 @@
+<html>
+	<div class="alert alert-success" role="alert">
+	<center>
+		<% if @status=="accepted" %>
+			CONGRATS.....YOUR LOAN IS ACCEPTED<br>
+			<br>
+			For future references please keep your loan id<br>
+			Your Loan id is <%= @id %>
+			<% elsif  @status=="rejected"%>
+				SORRY.....YOUR LOAN IS REJECTED<br><br>
+				For future references please keep your loan id<br>
+				Your Loan id is <%= @id %>
+			<% end %>
+	</center>
+	</div>
+</html> 
